@@ -8,13 +8,13 @@ const { check, validationResult } = require("express-validator");
 const bcrypt = require("bcryptjs");
 
 //@route    GET api/auth
-//@desc     Test route
+//@desc     Get user
 //@access   Private
 router.get("/", auth, async (req, res) => {
   try {
     //   console.log(req.user)
     const user = await User.findById(req.user.id).select("-password");
-    res.json(user);
+    res.json(user);  
   } catch (err) {
     console.error(err.message);
     res.status(500).send("server Error");

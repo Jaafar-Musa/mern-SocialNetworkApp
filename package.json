@@ -4,7 +4,7 @@
   "description": "Social network for devs",
   "main": "server.js",
   "scripts": {
-    "start":"node server",
+    "start": "node server",
     "dev": "nodemon server"
   },
   "author": "Jaafar Musa",
@@ -17,6 +17,7 @@
     "gravatar": "^1.8.2",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.1.2",
+    "normalize-url": "^4.5.1",
     "request": "^2.88.2"
   },
   "devDependencies": {
